@@ -1,4 +1,4 @@
-require File.expand_path('../boot', __FILE__)
+requissets.initialize_on_precompilere File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
@@ -58,5 +58,8 @@ module FirstApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.assets.initialize_on_precompile = false
+
   end
 end
